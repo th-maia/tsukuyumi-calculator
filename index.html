@@ -10,11 +10,11 @@
   <div>
     <div>
       <button type="button" style="background-color: rgb(64,88,42); color: rgb(249,242,229)" onclick="changeFaction(boarlords, 'boarlords')">boarlords</button>
-      <button type="button" style="background-color: rgb(246,204,74); color: rgb(0,0,0)" onclick="changeFaction(darkSeed, 'darkSeed')">dark seed</button>
       <button type="button" style="background-color: rgb(151,27,20); color: rgb(246,239,229)" onclick="changeFaction(cybersamurai, 'cybersamurai')">cybersamurai</button>
+      <button type="button" style="background-color: rgb(246,204,74); color: rgb(0,0,0)" onclick="changeFaction(darkSeed, 'darkSeed')">dark seed</button>
       <button type="button" style="background-color: rgb(47,92,149); color: rgba(247,240,230)" onclick="changeFaction(nomands, 'nomands')">nomands</button>
     </div>
-    <img id="factionImage" src="./images/boarlords.png" alt="boarlords faction sheet" width="100%"><br>
+    <img id="factionImage" src="images/boarlords.png" alt="boarlords faction sheet" width="100%"><br>
     <div id="unitsButtons" style="background-color: rgb(212, 205, 199); margin-top: -5px; display: flex;">
       <select onchange="calculate()" style="margin-left: 11%; transform: translate(-50%); position: absolute;">
         <option value="0">0</option>
@@ -68,7 +68,7 @@
     <button id="Defender" type="button" onclick="saveTotal()" style="font-size: 20px ;background-color: rgb(0, 0, 0); color: antiquewhite; border-width: 3px; border-color: rgb(119, 119, 119); margin-top: 4px;"> Save Defender</button>
     </div>
   </div>
-  <script src="./database.js"></script>
-  <script src="./script.js"></script>
+  <script src="database.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,12 +1,9 @@
 // import { boarlords } from './database/boarlords.js'; // estamos com problema de importação tendo que colocar no scrypt do arquivo principal o type="module" porem a função calculate fica sem funcionar.
 // https://www.youtube.com/watch?v=6Avdyl8YgWg&ab_channel=HighTechCursosF%C3%A1bricadeProgramador
 
-// deixar os bottoes com borda e radios  border-width: "2px" e border-radius: "8px"
-
 let total = [0,0,0];
 
 let selectedFaction = boarlords
-// changeButtons(boarlords)
 
 function changeFaction(faction, factionString) {
 	changeImage(factionString);
@@ -33,6 +30,13 @@ function changeButtons(faction) {
   for (let i = 0; i < faction.length; i+=1 ) {
 		let selectInput = document.createElement("select");
     selectInput.setAttribute("onchange","calculate()");
+    selectInput.setAttribute("style",
+      i < faction.length - 1 ? (
+        `margin-left: ${faction[i].marginLeft}; transform: translate(-50%); position: absolute;`
+      ) : (
+        `margin-left: ${faction[i].marginLeft}; transform: translate(-50%);`
+      )
+    );
     father.appendChild(selectInput);
 
     for (let e = 0; e <= faction[i].quantity; e+=1 ) {
