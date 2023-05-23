@@ -8,13 +8,13 @@
     <style>
       @keyframes disapear {
         from {opacity: 100%;}
-        to {opacity: 0%; z-index: -2} 
+        to {opacity: -50%; z-index: -2} 
       }
     </style>
 </head>
 <body>
   <div>
-    <img id="imageTitle" src="images/tsukuyumiMob.png" width="100%" style="z-index: 1; position: absolute; left: 0; top: 0; position: fixed; animation: disapear 2300ms linear 800ms 1 forwards;">
+    <img id="imageTitle" src="images/tsukuyumiMob.png" width="100%" style="z-index: 1; position: absolute; left: 0; top: 0; position: fixed; animation: disapear 3000ms linear 1300ms 1 forwards;">
     <div style="position: fixed">
       <button type="button" style="background-color: rgb(64,88,42); color: rgb(249,242,229)" onclick="changeFaction(boarlords, 'boarlords')">boarlords</button>
       <button type="button" style="background-color: rgb(151,27,20); color: rgb(246,239,229)" onclick="changeFaction(cybersamurai, 'cybersamurai')">cybersamurai</button>
