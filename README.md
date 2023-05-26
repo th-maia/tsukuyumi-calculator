@@ -4,8 +4,8 @@ Este projeto foi desenvolvido por mim de forma fanmade para facilitar os calculo
 site da King Racoon Games: https://kingracoon.com/en/studio/tsukuyumi/
 ![image0](./images/image0.png)
 
-Esta aplicação pode ser exibida no seu browser direto no endereço sem precisar de instalação: 
-https://th-maia.github.io/tsukuyumi-calculator/
+Esta aplicação pode ser exibida no seu browser direto no endereço sem precisar de instalação:
+  https://th-maia.github.io/tsukuyumi-calculator/
 
 **A aplicação**
 A aplicação se desenrola toda no front-end. um JSOn com os dados das unidades do jogo e um script.js para calcular e mostrar as facções na tela. 
