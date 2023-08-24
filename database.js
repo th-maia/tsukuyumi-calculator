@@ -1,4 +1,15 @@
+// falta olhar a quantidade dos kamp e completar os children of lion e os Oni
+/*{
+  name: "boarlords",
+  backgroundColor: "rgb(64,88,42)",
+  color: "rgb(249,242,229)",
+},*/
 const boarlords = [
+  {
+    name: "boarlords",
+    backgroundColor: "rgb(64,88,42)",
+    color: "rgb(249,242,229)",
+  },
   {
     name: "Squeaker",
     conquestValue: "15",
@@ -51,6 +62,11 @@ const boarlords = [
 
 const cybersamurai = [
   {
+    name: "cybersamurai",
+    backgroundColor: "rgb(151,27,20)",
+    color: "rgb(246,239,229)",
+  },
+  {
     name: "Attack Drone",
     conquestValue: "5",
     healthPoints: "5",
@@ -101,6 +117,11 @@ const cybersamurai = [
 ];
 
 const darkSeed = [
+  {
+    name: "darkSeed",
+    backgroundColor: "rgb(246,204,74)",
+    color: "rgb(0,0,0)",
+  },
   {
     name: "Worker",
     conquestValue: "5",
@@ -161,6 +182,11 @@ const darkSeed = [
 
 const nomands = [
   {
+    name: "nomands",
+    backgroundColor: "rgb(47,92,149)",
+    color: "rgb(247,240,230)",
+  },
+  {
     name: "Dog",
     conquestValue: "5",
     healthPoints: "5",
@@ -215,5 +241,67 @@ const nomands = [
     damageValue: "15",
     quantity: "1",
     marginLeft: "67%"
+  }
+];
+
+const kampfgruppe03 = [
+  {
+    name: "Marduk",
+    conquestValue: "25",
+    healthPoints: "20",
+    damageValue: "15",
+    quantity: "1",
+    marginLeft: "10%"
+  },
+  {
+    name: "Freischutz",
+    conquestValue: "15",
+    healthPoints: "20",
+    damageValue: "20",
+    quantity: "1",
+    marginLeft: "20%"
+  },
+  {
+    name: "Drachentoter",
+    conquestValue: "75",
+    healthPoints: "35",
+    damageValue: "40",
+    quantity: "1",
+    marginLeft: "30%"
+  },
+  {
+    name: "Beowulf",
+    conquestValue: "50",
+    healthPoints: "50",
+    damageValue: "25",
+    quantity: "1",
+    marginLeft: "45%"
+  },
+  {
+    name: "Erzergel",
+    conquestValue: "25",
+    healthPoints: "15",
+    damageValue: "10",
+    quantity: "1",
+    marginLeft: "60%"
+  }
+];
+
+const childrenOfTheLion = [
+  {
+    name: "Procer",
+    conquestValue: "20",
+    healthPoints: "20",
+    damageValue: "15",
+    quantity: "1",
+    marginLeft: "60%"
+  },
+  {
+    name: "Erzergel",
+    conquestValue: "25",
+    healthPoints: "15",
+    damageValue: "10",
+    quantity: "1",
+    marginLeft: "60%"
   }
 ];

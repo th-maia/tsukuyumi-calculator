@@ -11,19 +11,19 @@
         to {opacity: -50%; z-index: -2} 
       }
     </style>
+    <img id="imageTitle" src="images/tsukuyumiMob.png" width="100%" style="z-index: 1; position: absolute; left: 0; top: 0; position: fixed; animation: disapear 3000ms linear 1300ms 1 forwards;">
 </head>
 <body>
   <div>
-    <img id="imageTitle" src="images/tsukuyumiMob.png" width="100%" style="z-index: 1; position: absolute; left: 0; top: 0; position: fixed; animation: disapear 3000ms linear 1300ms 1 forwards;">
     <div style="position: fixed">
       <button type="button" style="background-color: rgb(64,88,42); color: rgb(249,242,229)" onclick="changeFaction(boarlords, 'boarlords')">boarlords</button>
       <button type="button" style="background-color: rgb(151,27,20); color: rgb(246,239,229)" onclick="changeFaction(cybersamurai, 'cybersamurai')">cybersamurai</button>
       <button type="button" style="background-color: rgb(246,204,74); color: rgb(0,0,0)" onclick="changeFaction(darkSeed, 'darkSeed')">dark seed</button>
-      <button type="button" style="background-color: rgb(47,92,149); color: rgba(247,240,230)" onclick="changeFaction(nomands, 'nomands')">nomands</button>
+      <button type="button" style="background-color: rgb(47,92,149); color: rgb(247,240,230)" onclick="changeFaction(nomands, 'nomands')">nomands</button>
     </div>
     <img id="factionImage" src="images/boarlords.png" alt="boarlords faction sheet" width="100%"><br>
     <div id="unitsButtons" style="background-color: rgb(212, 205, 199); margin-top: -5px; display: flex;">
-      <select onchange="calculate()" style="margin-left: 11%; transform: translate(-50%); position: absolute;">
+      <select onchange="calculate()" style="margin-left: 11%; transform: translate(-50%); position: absolute; height: 30px;">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -34,14 +34,14 @@
         <option value="7">7</option>
         <option value="8">8</option>
       </select>
-      <select onchange="calculate()" style="margin-left: 30%; transform: translate(-50%); position: absolute;">
+      <select onchange="calculate()" style="margin-left: 30%; transform: translate(-50%); position: absolute; height: 30px;">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
       </select>
-      <select onchange="calculate()" style="margin-left: 41.5%; transform: translate(-50%); position: absolute;">
+      <select onchange="calculate()" style="margin-left: 41.5%; transform: translate(-50%); position: absolute; height: 30px;">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -50,17 +50,17 @@
         <option value="5">5</option>
         <option value="6">6</option>
       </select>
-      <select onchange="calculate()" style="margin-left: 63.5%; transform: translate(-50%); position: absolute;">
+      <select onchange="calculate()" style="margin-left: 63.5%; transform: translate(-50%); position: absolute; height: 30px;">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
       </select>
-      <select onchange="calculate()" style="margin-left: 77.5%; transform: translate(-50%); position: absolute;">
+      <select onchange="calculate()" style="margin-left: 77.5%; transform: translate(-50%); position: absolute; height: 30px;">
         <option value="0">0</option>
         <option value="1">1</option>
       </select>
-      <select onchange="calculate()" style="margin-left: 92.5%; transform: translate(-50%);">
+      <select onchange="calculate()" style="margin-left: 92.5%; transform: translate(-50%); height: 30px;">
         <option value="0">0</option>
         <option value="1">1</option>
       </select>
@@ -70,9 +70,15 @@
       <b style="color: rgb(201,23,21)">❤</b>:<span id="valueA2">---</span> |
       <b>Λ</b>:<span id="valueA3">---</span>
     </h3>
-    <div>
-    <button id="Attacker" type="button" onclick="saveTotal()" style="font-size: 20px ;background-color: rgb(0, 0, 0); color: antiquewhite; border-width: 3px; border-color: rgb(119, 119, 119); margin-top: 4px;">Save Attacker</button>
-    <button id="Defender" type="button" onclick="saveTotal()" style="font-size: 20px ;background-color: rgb(0, 0, 0); color: antiquewhite; border-width: 3px; border-color: rgb(119, 119, 119); margin-top: 4px;"> Save Defender</button>
+    <div id="saveButtons">
+      <button id="Save0" type="button" onclick="saveTotal(0)" style="font-size: 20px ;background-color: rgb(0, 0, 0); color: antiquewhite; border-width: 3px; border-color: rgb(119, 119, 119); margin-top: 4px;">   Save Army   </button>
+      <button id="modify0" type="button" onclick="load(0)" disabled>   GET   </button>
+      <button id="Save1" type="button" onclick="saveTotal(1)" style="font-size: 20px ;background-color: rgb(0, 0, 0); color: antiquewhite; border-width: 3px; border-color: rgb(119, 119, 119); margin-top: 4px;">   Save Army   </button>
+      <button id="modify1" type="button" onclick="load(1)" disabled>   GET   </button>
+      <button id="Save2" type="button" onclick="saveTotal(2)" style="font-size: 20px ;background-color: rgb(0, 0, 0); color: antiquewhite; border-width: 3px; border-color: rgb(119, 119, 119); margin-top: 4px;">   Save Army   </button>
+      <button id="modify2" type="button" onclick="load(2)" disabled>   GET   </button>
+      <button id="Save3" type="button" onclick="saveTotal(3)" style="font-size: 20px ;background-color: rgb(0, 0, 0); color: antiquewhite; border-width: 3px; border-color: rgb(119, 119, 119); margin-top: 4px;">   Save Army   </button>
+      <button id="modify3" type="button" onclick="load(3)" disabled>   GET   </button>
     </div>
   </div>
   <script src="database.js"></script>
